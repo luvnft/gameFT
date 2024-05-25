@@ -12,7 +12,7 @@ import Link from "next/link";
 let customDarkTheme;
 const Navbar = () => {
   const address = useAddress();
-  const [activeButton, setActiveButton] = useState(1);
+  const [activeButton, setActiveButton] = useState(null);
 
   const handleClick = (buttonNumber) => {
     setActiveButton(buttonNumber);
@@ -32,8 +32,8 @@ const Navbar = () => {
           <Image
             src="/assets/imgs/walletlogo.png"
             className="logo"
-            height={50}
-            width={50}
+            height={80}
+            width={80}
           />
           <div className="position1">
             <div className="line-circle">
